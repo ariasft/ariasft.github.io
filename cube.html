@@ -1,0 +1,53 @@
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .cube *{
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        display: block;
+    }
+    .cube{
+        position: absolute;
+        left: 40%;
+        top: 40%;
+        transform-style: preserve-3d;
+        transition: 6s;
+    }
+    .cube:hover{
+        transform: rotateX(-360deg) rotateY(-360deg) rotateZ(-360deg);
+    }
+    .sd1{
+        transform: rotateY(90deg) translateX(150px) translateZ(150px);
+        background-color: rgba(255, 0, 0,0.5);
+    }
+    .sd2{
+        transform: rotateY(270deg) translateX(-150px) translateZ(150px);
+        background-color: rgba(0, 255, 0,0.5);
+    }
+    .sd3{
+        transform: rotateY(180deg) translateZ(300px);
+        background-color: rgba(0, 0, 255,0.5);
+    }
+    .sd4{
+        background-color: rgba(255, 255, 0,0.5);
+        transform: rotateX(90deg) translateZ(150px) translateY(-150px);
+    }
+    .sd5{
+        background-color: rgba(255, 0, 255,0.5);
+        transform: rotateX(-90deg) translateZ(150px) translateY(150px);
+    }
+    .sd6{
+        background-color: rgba(0, 255, 255,0.5);
+    }
+</style>
+<div class="cube">
+    <div class="sd1">side1</div>
+    <div class="sd2">side2</div>
+    <div class="sd3">side3</div>
+    <div class="sd4">side4</div>
+    <div class="sd5">side5</div>
+    <div class="sd6">side6</div>
+</div>
