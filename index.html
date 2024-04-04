@@ -3,136 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ariasoft</title>
-    <link rel="stylesheet" href="style.css">
-    <nav>
-        <span class="logo">ariasoft arix</span>
-        <div class="items">
-            <a href="javascript:void(0);" id="item" >products</a>
-            <div class="menu" id="prod">
-                <li>itedsa</li>
-                <li>kdadsd</li>
-            </div>
-            <a href="#" id="item">about me</a>
-        </div>
-    </nav>
+    <title>Document</title>
     <style>
-        .menu{
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .taskman{
+            height: 31px;
+            width: 100%;
+            background: url("tman_txt.png");
+        }
+        .tmanicons{
+            height: 100%;
+            background: url("tman.png");
+            background-repeat: no-repeat;
+        }
+        .taskbar{
+            bottom: 0px;
+            height: 44px;
+            width: 100%;
+            background: url("tbar_txt.png");
             position: absolute;
-            background: linear-gradient(purple,rgb(100, 0, 100));
-            box-shadow: 0px 0px 30px darkorchid;
-            color: white;
-            display: none;
-            border-radius: 10px;
         }
-        .menu *{
-            display: block;
-            padding: 10px;
-            padding-right: 70px;
-            margin-left: 0;
+        .tbarL{
+            height: 100%;
+            background: url("tbar_l.png");
+            background-repeat: no-repeat;
+            width: 732px;
         }
-        .menu *:hover{
-            background-color: rgba(50, 50, 50, 0.5);
-            cursor: pointer;
+        .tbarR{
+            height: 100%;
+            background: url("tbar_r.png");
+            background-repeat: no-repeat;
+            float: right;
+            width: 139px;
         }
-        .laptop{
-            width: 630px;
-            height: 378px;
-            content: url("laptop.png");
-            margin-top: 100px;
-        }
-        .rest {
-            text-align: center;
+        .taskbar *{
+            display: inline-block;
         }
         body{
-            background-image: linear-gradient(black,purple);
-            height: 1500px;
+            overflow: hidden;
+            background-color: #4682b4;
         }
-        body::-webkit-scrollbar{
-            display: none;
-        }
-        .name{
-            color: white;
-            font-size: 80px;
-            font-family: "source code pro";
-        }
-        .dlb{
-            padding: 15px;
-            font-weight: bolder;
-        }
-        .desc{
-            background-color: rgba(50, 50, 50, 0.7);
-            color: white;
+        .icons {
+            width: 84px;
+            height: 219px;
+            background: url("icons.png");
             position: absolute;
-            width: 100%;
+            top: 40px;
+        }
+        .windowheader {
+            width: 970px;
+            height: 519px;
+            background: url("win.png");
+        }
+        .windowcont{
+            width: 953px;
+            height: 480px;
+            background-color: white;
+            position: absolute;
+            top: 28px;
+            left: 5px;
+            border-style: inset;
+        }
+        .window{
+            width: 970px;
+            height: 519px;
+            position: absolute;
+            resize: both;
         }
     </style>
 </head>
 <body>
-    <div class="rest">
-        <img class="laptop" alt=""><br>
-        <span class="name"></span><br><br>
-        <button class="dlb">Download arix</button>
+    <div class="icons"></div>
+    <div class="window">
+        <div class="windowheader"></div>
+        <div class="windowcont">
+            <center>
+                <h1>arix</h1>
+                <p>arix is a retro linux distro running kde 1.1.2 based on debian 13 (trixie)</p>
+                <img src="sc.png" style="width: 507px; height: 265px;" alt="">
+                <br>
+                <a style="font-size: 25px;" href="https://drive.google.com/file/d/13ST-jC4rkwTaRkFgv58r1NJMdniSQSrS/view?usp=sharing">Download</a>
+            </center>
+        </div>
     </div>
-    <div class="desc">
-        <h1>a simple oprating system</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed optio dolore nostrum exercitationem maiores ex officia officiis assumenda eligendi aspernatur porro rem laborum blanditiis hic recusandae velit amet provident!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed optio dolore nostrum exercitationem maiores ex officia officiis assumenda eligendi aspernatur porro rem laborum blanditiis hic recusandae velit amet provident!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed optio dolore nostrum exercitationem maiores ex officia officiis assumenda eligendi aspernatur porro rem laborum blanditiis hic recusandae velit amet provident!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed optio dolore nostrum exercitationem maiores ex officia officiis assumenda eligendi aspernatur porro rem laborum blanditiis hic recusandae velit amet provident!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed optio dolore nostrum exercitationem maiores ex officia officiis assumenda eligendi aspernatur porro rem laborum blanditiis hic recusandae velit amet provident!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed optio dolore nostrum exercitationem maiores ex officia officiis assumenda eligendi aspernatur porro rem laborum blanditiis hic recusandae velit amet provident!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed optio dolore nostrum exercitationem maiores ex officia officiis assumenda eligendi aspernatur porro rem laborum blanditiis hic recusandae velit amet provident!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed optio dolore nostrum exercitationem maiores ex officia officiis assumenda eligendi aspernatur porro rem laborum blanditiis hic recusandae velit amet provident!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed optio dolore nostrum exercitationem maiores ex officia officiis assumenda eligendi aspernatur porro rem laborum blanditiis hic recusandae velit amet provident!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed optio dolore nostrum exercitationem maiores ex officia officiis assumenda eligendi aspernatur porro rem laborum blanditiis hic recusandae velit amet provident!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed optio dolore nostrum exercitationem maiores ex officia officiis assumenda eligendi aspernatur porro rem laborum blanditiis hic recusandae velit amet provident!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed optio dolore nostrum exercitationem maiores ex officia officiis assumenda eligendi aspernatur porro rem laborum blanditiis hic recusandae velit amet provident!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed optio dolore nostrum exercitationem maiores ex officia officiis assumenda eligendi aspernatur porro rem laborum blanditiis hic recusandae velit amet provident!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed optio dolore nostrum exercitationem maiores ex officia officiis assumenda eligendi aspernatur porro rem laborum blanditiis hic recusandae velit amet provident!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed optio dolore nostrum exercitationem maiores ex officia officiis assumenda eligendi aspernatur porro rem laborum blanditiis hic recusandae velit amet provident!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed optio dolore nostrum exercitationem maiores ex officia officiis assumenda eligendi aspernatur porro rem laborum blanditiis hic recusandae velit amet provident!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed optio dolore nostrum exercitationem maiores ex officia officiis assumenda eligendi aspernatur porro rem laborum blanditiis hic recusandae velit amet provident!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed optio dolore nostrum exercitationem maiores ex officia officiis assumenda eligendi aspernatur porro rem laborum blanditiis hic recusandae velit amet provident!</p>        
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed optio dolore nostrum exercitationem maiores ex officia officiis assumenda eligendi aspernatur porro rem laborum blanditiis hic recusandae velit amet provident!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed optio dolore nostrum exercitationem maiores ex officia officiis assumenda eligendi aspernatur porro rem laborum blanditiis hic recusandae velit amet provident!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed optio dolore nostrum exercitationem maiores ex officia officiis assumenda eligendi aspernatur porro rem laborum blanditiis hic recusandae velit amet provident!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed optio dolore nostrum exercitationem maiores ex officia officiis assumenda eligendi aspernatur porro rem laborum blanditiis hic recusandae velit amet provident!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed optio dolore nostrum exercitationem maiores ex officia officiis assumenda eligendi aspernatur porro rem laborum blanditiis hic recusandae velit amet provident!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed optio dolore nostrum exercitationem maiores ex officia officiis assumenda eligendi aspernatur porro rem laborum blanditiis hic recusandae velit amet provident!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed optio dolore nostrum exercitationem maiores ex officia officiis assumenda eligendi aspernatur porro rem laborum blanditiis hic recusandae velit amet provident!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed optio dolore nostrum exercitationem maiores ex officia officiis assumenda eligendi aspernatur porro rem laborum blanditiis hic recusandae velit amet provident!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed optio dolore nostrum exercitationem maiores ex officia officiis assumenda eligendi aspernatur porro rem laborum blanditiis hic recusandae velit amet provident!</p>
+    <div class="taskman">
+        <div class="tmanicons"></div>
+    </div>
+    <div class="taskbar">
+        <div class="tbarL"></div>
+        <div class="tbarR"></div>
     </div>
     <script>
-        function typewriter(text,element){
-            var nm = text
-            var c = 0
-            var x = setInterval(()=>{
-                if(c > nm.length-1){
-                    clearInterval(x)
-                }else{
-                    element.innerHTML += nm[c]
-                    c++
-                }
-            },60)
+        function dragElement(elmnt) {
+            var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+            document.querySelector(".windowheader").onmousedown = dragMouseDown;
+            function dragMouseDown(e) {
+                e = e || window.event;
+                e.preventDefault();
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                document.onmouseup = closeDragElement;
+                document.onmousemove = elementDrag;
+            }
+            function elementDrag(e) {
+                e = e || window.event;
+                e.preventDefault();
+                pos1 = pos3 - e.clientX;
+                pos2 = pos4 - e.clientY;
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+                elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+            }
+            function closeDragElement() {
+                document.onmouseup = null;
+                document.onmousemove = null;
+            }
         }
-        function togglemenu(elem,menue){
-            elem.onmousedown = ()=>{
-                menue.style.display = "block"
-            }
-            menue.onmouseover = ()=>{
-                menue.style.display = "block"
-            }
-            menue.onmouseleave = ()=>{
-                menue.style.display = "none"
-            }
-        }
-        document.querySelector("nav").style.width = (window.innerWidth-30)+"px"
-        document.querySelector(".desc").style.top = window.innerHeight+"px"
-        var b = document.querySelector(".name")
-        typewriter("arix. simple yet creative",b)
-        togglemenu(document.querySelector("#item"),document.querySelector("#prod"))
+        document.querySelector(".window").style.top = (window.innerHeight/2)-(519/2) + "px"
+        document.querySelector(".window").style.left = (window.innerWidth/2)-(970/2) + "px"
+        dragElement(document.querySelector(".window"))
     </script>
 </body>
 </html>
